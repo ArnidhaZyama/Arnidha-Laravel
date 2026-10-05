@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\MahasiswaController;
+use App\Http\Controllers\PegawaiController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 
 Route::get('/pcr', function () {
     return 'Selamat datang di website kampus PCR';
@@ -32,3 +34,5 @@ Route::get('/about', function () {
 Route::get('/about', function () {
     return view('halaman-mahasiswa-detail');
 });
+
+route::get('/home', [App\Http\Controllers\HomeController::class, 'index']);
