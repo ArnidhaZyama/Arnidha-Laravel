@@ -5,8 +5,8 @@ use App\Http\Controllers\PegawaiController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 
-Route::get('/pcr', function () {
-    return 'Selamat datang di website kampus PCR';
+Route::get('/', function () {
+    return view('welcome');
 });
 
 Route::get('/mahasiswa', function () {
