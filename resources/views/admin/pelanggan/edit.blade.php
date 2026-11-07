@@ -322,10 +322,11 @@
 
                                     <!-- Gender -->
                                     <div class="mb-3">
-                                        <select class="form-select mb-0" id="gender" name="gender" aria-label="Gender select example">
-                                            <option selected>Gender</option>
-                                            <option value="Female" {{ $dataPelanggan->gender == 'Female' ? 'selected': ''}} >Female</option>
-                                            <option value="Male" {{ $dataPelanggan->gender == 'Male' ? 'selected': '' }} >Male</option>
+                                        <select class="form-select mb-0" id="gender" name="gender">
+                                            <option value="">Gender</option>
+                                            <option value="Male" {{ $dataPelanggan->gender == 'Male' ? 'selected' : '' }}>Male</option>
+                                            <option value="Female" {{ $dataPelanggan->gender == 'Female' ? 'selected' : '' }}>Female</option>
+                                            <option value="Other" {{ $dataPelanggan->gender == 'Other' ? 'selected' : '' }}>Other</option>
                                         </select>
                                     </div>
                                 </div>
